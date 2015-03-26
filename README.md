@@ -29,5 +29,5 @@ Gretty is a plugin that will allow easy deployment of the web app to an embedded
 ```groovy
 ./gradlew runApp
 ```
-This will start up the application, default is (http://localhost:9080/seed-webapp).  This is the quintessential [Hello World!](http://localhost:9080/seed-webapp/hello-world) Page.
+This will start up the application, default is [http://localhost:9080/seed-webapp].  This is the quintessential [Hello World!](http://localhost:9080/seed-webapp/hello-world) Page.
 
