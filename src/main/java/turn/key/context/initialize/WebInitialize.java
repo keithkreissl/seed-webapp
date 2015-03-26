@@ -1,5 +1,8 @@
 package turn.key.context.initialize;
 
+import javax.servlet.ServletContext;
+import javax.servlet.ServletException;
+
 import org.springframework.core.annotation.Order;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
@@ -11,6 +14,13 @@ import turn.key.context.web.WebContext;
 @Order(1)
 public class WebInitialize extends
 		AbstractAnnotationConfigDispatcherServletInitializer {
+	
+	@Override
+	public void onStartup(ServletContext servletContext)
+			throws ServletException {
+		super.onStartup(servletContext);
+		servletContext.setInitParameter("contextConfigLocation", "");
+	}
 	
 	@Override
 	protected Class<?>[] getRootConfigClasses() {
