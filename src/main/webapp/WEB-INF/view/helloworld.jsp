@@ -1,5 +1,5 @@
 <html>
 <body>
-hello world!
+Spring ${message}!
 </body>
 </html>

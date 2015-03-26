@@ -1,16 +1,21 @@
 package turn.key.context.initialize;
 
+import org.springframework.core.annotation.Order;
+import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
+import turn.key.context.service.ServiceContext;
 import turn.key.context.web.WebContext;
 
+@EnableWebMvc
+@Order(1)
 public class WebInitialize extends
 		AbstractAnnotationConfigDispatcherServletInitializer {
-
+	
 	@Override
 	protected Class<?>[] getRootConfigClasses() {
 		//The root configuration classes will live here
-		return null;
+		return new Class<?>[]{ServiceContext.class};
 	}
 
 	@Override
