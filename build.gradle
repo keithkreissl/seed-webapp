@@ -28,7 +28,7 @@ apply plugin: 'org.akhikhl.gretty'
 
 gretty {
 	port = 9080
-	contextPath = '/seed-webapp'
+	contextPath = '/turn-key-webapp'
 	servletContainer = 'jetty9' //this is default
 }
 

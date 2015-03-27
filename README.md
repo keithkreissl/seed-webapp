@@ -1,4 +1,4 @@
-# Simple Seed Webapp
+# Turn Key Webapp
 ___
 ## Introduction
 ___
@@ -30,6 +30,6 @@ Gretty is a plugin that will allow easy deployment of the web app to an embedded
 ./gradlew runApp
 ```
 The quintessential Hello World pages
- * [Spring Controller Hello World!](http://localhost:9080/seed-webapp/hello-world) Page.
- * [Jersey REST Hello World!](http://localhost:9080/seed-webapp/rest/hello-world) Page.
+ * [Spring Controller Hello World!](http://localhost:9080/turn-key-webapp/hello-world) Page.
+ * [Jersey REST Hello World!](http://localhost:9080/turn-key-webapp/rest/hello-world) Page.
 
