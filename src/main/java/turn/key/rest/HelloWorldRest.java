@@ -22,7 +22,7 @@ public class HelloWorldRest {
 	@GET
 	@Produces("application/json")
 	public Map<String, String> helloWorld(){
-		return Collections.singletonMap("jersey",helloWorldService.sayHello());
+		return Collections.singletonMap("message",helloWorldService.sayHello());
 	}
 
 }
